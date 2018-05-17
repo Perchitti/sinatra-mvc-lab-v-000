@@ -7,7 +7,7 @@ class App < Sinatra::Base
   end
 
   get '/user_input' do
-    @pig_latin = PigLatinizer.new(params[:user_input])
+    @pig_latin = PigLatinizer.new(params[:user_text])
   end
 
 
