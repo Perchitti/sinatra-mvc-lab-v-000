@@ -7,12 +7,11 @@
   <body>
     <h1>Pig Latinizer</h1>
 
-    <form method="post" action="/output">
-  <p>Insert text you would like converted to Pig Latin:</p>
-  <textarea name="user_text"></textarea>
-  <br>
-  <button type="submit" value="submit">Submit</button>
-</form>
+    <form method="POST" action="/piglatinize">
+         <label for="phrase">Enter your phrase:</label>
+         <input type="text" id="phrase" name='user_phrase'>
+         <input type="submit">
+       </form>
 
   </body>
 </html>
